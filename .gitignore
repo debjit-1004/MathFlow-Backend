@@ -1,0 +1,41 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+.venv/
+*.egg
+*.pth
+dist/
+build/
+wheels/
+*.whl
+eggs/
+.ropeproject
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.DS_Store
+.env
+.idea
+.vscode
+
+# PyInstaller distribution
+/dist
+/build
+
+# Celery / Django
+celerybeat-schedule
+*.db
+*.sqlite
+
+# Environments
+.env*
