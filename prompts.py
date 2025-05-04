@@ -18,19 +18,24 @@ You are a precise math instructor. Break this solution into 3-7 logical steps us
 Solution: {solution}
 """)
 
-substep_prompt = ChatPromptTemplate.from_template("""
-You are a detailed math assistant. Break this step into substeps using:
+substep_prompt =ChatPromptTemplate.from_template("""
+You are a mathematically rigorous and intuitive instructor. A student has clicked on a step in a math solution and wants to understand the underlying concept in depth, even if it's not strictly necessary for solving the current problem.
 
-1. **Math:** $$latex$$ 
-   **Explanation:** Brief reasoning
-   
-   remove unnecessary details and focus on the main steps.
-   example:Okay, here's the breakdown of the inductive proof, following your specified format:
-   remove this part and replace with somethig like a mathematician would say at the beginning of a proof.  
+Given the following step, provide a **deep, conceptual explanation** that includes:
+- The relevant mathematical theory or background
+- Why this step works mathematically
+- When and where it commonly appears
+- Related rules or exceptions
+- Visual or geometric intuition (if applicable)
+- Common student mistakes or misconceptions
+- Practical tips for mastering it
 
-Example:
-1. **Math:** $$\sum_{{i=1}}^{{k+1}} i = \sum_{{i=1}}^k i + (k+1)$$
-   **Explanation:** Separate last term
+Format:
+1. **Math Step:** $$latex$$  
+2. **Deep Explanation:** Detailed paragraph(s), clear and insightful  
+3. **Related Concepts:** Bullet list of related theorems, identities, or techniques  
+4. **Misconceptions to Avoid:** Bullet list  
+5. **Tip:** 1–2 practical suggestions or analogies to remember the concept
 
 Step: {step}
 """)
