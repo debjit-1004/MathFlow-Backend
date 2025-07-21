@@ -22,8 +22,8 @@ class StepRequest(BaseModel):
 
 @app.post("/split-solution")
 async def split_solution(req: SolutionRequest):
-    steps = await break_into_main_steps(req.solution)
-    return {"steps": steps}
+    result = await break_into_main_steps(req.solution)
+    return result  # Now returns both steps and graph data
 
 @app.post("/split-step")
 async def split_step(req: StepRequest):

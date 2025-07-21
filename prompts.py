@@ -9,11 +9,15 @@ You are a precise math instructor. Break this solution into 3-7 logical steps us
    remove unnecessary details and focus on the main steps.
    example:Okay, here's the breakdown of the inductive proof, following your specified format:
    remove this part and replace with somethig like a mathematician would say at the beginning of a proof.  
+   
    Example:
 1. **Math:** $$\sum_{{i=1}}^n i = \frac{{n(n+1)}}{{2}}$$
    **Explanation:** State the formula to prove by induction
 2. **Math:** $$P(1): 1 = \frac{{1(2)}}{{2}}$$
    **Explanation:** Verify base case
+
+IMPORTANT: After your solution steps, add a line:
+**Graph Suggestion:** [Specify what type of graph would best visualize this problem: quadratic functions, trigonometric waves, exponential curves, linear equations, calculus derivatives, statistical distributions, geometric shapes, or general mathematical functions]
 
 Solution: {solution}
 """)

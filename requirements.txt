@@ -4,3 +4,5 @@ langchain
 langgraph
 langchain-google-genai
 python-dotenv
+numpy
+sympy
